@@ -1,0 +1,158 @@
+body{
+    /*Tahoma geralmente é utilizada em sites*/
+    font-family: tahoma, arial,sans-serif;
+    /*Zerando as margens padrões*/
+    margin: 0;
+    padding:0;
+}
+
+#principal{
+    /*Tamanho div = 1024*/
+    width: 1024px;
+    /*Centralizando*/
+    margin:20px auto;
+    
+}
+
+.hd-top{
+    height:50px;
+    background:#162028;
+    /*Fazer o position:absolute se relacionar com o header topo */
+    position: relative;
+    
+}
+
+.logo{
+    /* |T|R|B|L| */
+    margin:5px 0 0 135px;
+}
+
+.hd-nav{
+    position:absolute;
+    top: 0;
+    right:0;
+    /*Hd-top possui uma altura ja - colocamos 100%*/ 
+    height:100%
+}
+
+.hd-nav ul{
+    /*Zerando o padrão da <ul>*/
+    margin: 0;
+    padding:0;
+    
+}
+
+.hd-nav li{
+    list-style: none;
+    display:inline-block;
+    /* |T|R|B|L| */
+    margin: 0 15px 0 0;
+    padding:13px;
+}
+.hd-nav a{
+    color: #425564;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 5px;
+     /*efeito menu de transição*/
+    transition: color .3s linear;
+     /*1 propriedade que estamos animando 2 tempo 3 aceleração ou desaceleração*/
+}
+.hd-nav a:hover{
+    color:white;
+}
+
+.portf{
+    /* |CB|DE| */
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.portf h1{
+    font-size: 36px;
+    color:#252525;
+    
+}
+.portf p{
+    font-size: 16px;
+    /*32 px ou 2 -> espaço duplo*/
+    line-height: 2;
+    color:#555;
+}
+
+.gallery{
+    color:#555;
+    /* |T|R|B|L| */
+    padding: 0 100px 50px 100px;
+    overflow:auto;
+}
+
+.g-card{
+    width:32%;
+    float:left;
+    text-align: center;
+}
+
+.g-title{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.about{
+    background-color: #003d52;
+    padding: 150px;
+    color:white;
+    background-image: url(../IMAGENS/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.about h2{
+    text-transform: uppercase;
+    font-size:45px;
+    font-weight: normal;
+}
+
+.about p{
+    line-height:1.5;
+    width:70%;
+}
+
+.contact{
+    /* |CB|DE| */
+    margin: 50px 0 ;
+}
+
+.contact address{
+    color:#143f52;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-maps{
+    width:100%;
+    height:450px;
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-maps iframe{
+    width:100%;
+}
+
+footer{
+    background:#0b171f;
+    padding:25px;
+    font-size: 12px;
+    color:#6f8597;
+    letter-spacing:5px;
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- informa ao agente de usuario a versão do html que deve ser renderizazda-->
+<html lang="pt-br"> <!-- page language-->
+    <head>
+        <title>
+            Basic structure exemple page
+        </title>
+        <meta charset="utf-8"> <!--caracteres especiais-->
+        <!--Meta tag relacionada a mecanismos de busca-->
+        <meta name="author" content="Angelina Pierre">
+        <meta name="description" content="document list">
+        <meta name="keywords" content="html5, tecnology">
+        <style>
+            #container{
+                width: 80%;
+                padding:15px;
+                background:#ccc;
+                overflow:auto;
+            }
+            #container div{
+                width: 90px;
+                height:50px;
+                border: 2px solid red;
+                margin: 5px;
+            }
+            #div1{
+                float:left;
+            }
+            #div2{
+                float: left;
+            }
+
+            #div3{
+                background:yellow;
+                float: left;
+            }
+            header{
+                background:#ccc;
+                height:50px;
+            }
+            nav{
+                width: 25%;
+                height:150px;
+                background:orange;
+                float: left;
+                
+            }
+            main{
+                width:70%;
+                height:100px;
+                background:yellow;
+                float:left;
+            }
+            footer{
+                height:50px;
+                background:blue;
+                clear: both;
+            }
+
+            
+        </style>
+    </head> 
+
+    <body>
+        <h1>Float and Clear</h1>
+        <div id="container">
+            <div id="div1">div1</div>
+            <div id="div2">div2</div>
+            <div id="div3">div3</div>
+        </div>
+
+        <hr> <!--quebra temática entre elementos de nível de parágrafo -->
+
+        <header>header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <footer>footer</footer>
+    </body>
+</html>

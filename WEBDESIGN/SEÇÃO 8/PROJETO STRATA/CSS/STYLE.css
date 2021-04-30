@@ -1,0 +1,354 @@
+/* existe alguns projetos na internet chamados de cssreset
+    - Ele deixa a mesma formatação em todos os browsers.
+    - Lembrar de incluir no index
+*/
+
+/* algumas formatações precisam ter a mesma formatação, trabalhamos no style as formatações genericas */
+
+/* GOOGLE FONTES */
+/* PLUG-IN CHROME IDENTIFICAR FONTE (WHATFONT)*/
+
+/* ==========================TAGS======================= */
+body{
+    font-family:'Open Sans', Arial,Helvetica, sans-serif;
+    color: #666;
+    /* removendo negrito - não irá passa para o h1 
+    font-weight: normal;
+    */
+    line-height:1.7;
+}
+
+a{
+    /* como a bordar não esta fazendo uma transição suave, vamos alterar isso. - na transição */
+    transition: color .2s linear, border .2s linear;
+    text-decoration:none;
+    border-bottom: 1px dotted;
+    color:#49bf9d;
+}
+a:hover{
+    border-bottom-color:transparent;
+}
+p{
+    margin:0 0 2em;
+}
+img{
+    /* largura maxima da IMAGEM - ajusta ate o tamanho maximo da propria imagem */
+    max-width:100%;
+}
+/* todos os titulos possuem uma margem para baixo, mas elas não estão variando com o tipo do titulo */
+h1,h2,h3,h4,h5,h6{
+    color:#787878;
+    /* sem negrito */
+    font-weight: normal;
+    /* margem */
+    /* margin = 1em -> margem varia de acordo com a fonte.1em=proporção de um do tamanho padrão da fonte. 
+    h1 = 24px =  1em (relativo ao font-size)*/
+    margin: 1em 0;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size:30px;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 15px;
+}
+sub,sup{
+    font-size: 12px;
+}
+blockquote{
+    border-left:5px solid #efefef;
+    margin:2em 0;
+    padding:.5em 0 .5em 1.5em;
+
+}
+code{
+    background: #f7f7f7;
+    border-radius: .35em;
+    border:2px solid #efefef;
+    font-size:.9em;
+    padding: 0.25em 0.65em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #929292;
+    /* todo nome de fonte com espaço precisamos colocar aspas */
+}
+/* se colocarmos o display na tag code irá formatar todas as tags */
+pre code{
+    display: block;
+}
+/* toda ul tem como padrão uma margin e um padding */
+ul,ol{
+    margin:0;
+    padding: 0;
+    /* os bullets ficaram fora da formatação. */
+    /* list-style-position: inside; */
+    padding-left: 1.1em;
+}
+li{
+    padding-left: .5em;
+}
+.ul-alternated{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-alternated li{
+    border-bottom: 2px solid #d8d8d8;
+    padding-left: 0;
+}
+/* vemos que a ultima li possui uma formatação diferente, vamos usar uma pseudo classe */
+.ul-alternated li:last-child{
+    border: 0;
+}
+.ul-icons{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-icons li{
+    display: inline-block;
+    font-size: 2em;
+    color: #49bf9d;
+}
+input,label,textarea,Select{
+    display:inline-block;
+    /* paddin somando ao padrão do elemento */
+    width:100%;
+    box-sizing: border-box;
+}
+input, textarea,Select{
+    background:#ccc;
+    padding:15px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    margin-bottom: 15px;
+}
+/* selecionando todos os inputs do tipo text */
+input[type="radio"],input[type="checkbox"]{
+    width: auto;
+}
+input:focus, textarea:focus{
+    border: 3px solid #49bf9d;
+    /* tirando o padrão do browser */
+    outline:none;
+}
+textarea{
+    height:10em;
+}
+
+/* ==========================CLASSES======================= */
+.button-default{
+    background-color: #49bf9d;
+    border:3px solid #49bf9d;
+    color:white;
+    padding:.75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+    width: auto;
+    text-transform: uppercase;
+    transition:all .5s;
+    /* mão ao passar o mouse para selecionaveis */
+    cursor:pointer;
+}
+.button-default:hover{
+    background-color: #5ddeb9;
+    border-color: transparent;
+}
+.button-default-stroke{
+    background-color: white;
+    border-color: #efefef;
+    color: inherit;
+
+}
+.button-default-stroke:hover{
+    color: #49bf9d;;
+    border-color:#49bf9d;
+    /* faz com que so anime as bordas */
+    background-color: white;
+}
+.button-default-small{
+    font-size: 0.65em;
+}
+.button-default-big{
+    font-size:1em;
+}
+.button-default-full{
+    display: block;
+    text-align: center;
+}
+
+.img-link{
+    border: 0;
+}
+.table{
+    width: 100%;
+    margin: 0 0 2em 0;
+    /* devido ao border-colapse temos uma distancia entre as colunas das tabelas */
+    border-collapse: collapse;
+    text-align: left;
+}
+.table td{
+    padding: .75em;
+}
+.table th{
+    background: #ccc;
+    padding: .75em;
+}
+.table tbody tr td{
+    border-bottom: 1px solid #ccc;
+}
+.table tbody tr:first-child td{
+    border-top: 2px solid #666;
+}
+.table tbody tr:last-child td{
+    border-bottom: 2px solid #666;
+}
+/* selecionando onde colocar */
+
+/* .table tbody tr:nth-child(1),.table tbody tr:nth-child(3),.table tbody tr:nth-child(5){
+    background:red;
+} */
+/* outra maneira -> odd (impar) | even (par) */
+.table tbody tr:nth-child(odd){
+    background:#ccc;
+}
+.table-alt tbody td,.table-alt tbody tr:first-child td,.table-alt tbody tr:last-child{
+    border:1px solid #ddd;
+}
+
+.main-hd{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:35%;
+    padding:124px 54px 72px;
+    box-sizing:border-box;
+    background-image: url(./images/overlay.png), url(./images/bg.jpg);
+    background-position: left top;
+    background-size: auto,cover;
+    text-align: right;
+}
+.main-hd-title{
+    font-size:22px;
+    line-height:1.5;
+    color: white;
+    font-weight: normal;
+    color:rgba(255,255,255,.5);
+}
+.main-hd-title strong{
+    color:white;
+    font-weight: normal;
+}
+.main-hd-link{
+    /* vamos fazer ele herdar a cor do elemento acima dele (h1) facilita manutenção  */
+    color:inherit;
+}
+.main-hd-link:hover{
+    color:#49bf9d;
+}
+
+/* width main content = 100-35=75% */
+.main-content{
+    width:65%;
+    margin-left: 35%;
+    padding:124px 54px 72px;
+    /* o padding esta somando ao tamanho do elemento */
+    box-sizing:border-box;
+}
+
+.recent-works-card img{
+    border-radius: 10px;
+    overflow:hidden;
+}
+.main-hd-link img{
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.gallery-img img{
+    width:100%;
+}
+
+.gallery-thumb img,.gallery-img img{
+    /* esses 2% é relativo a largura do elemento pai tbm (aplicando na vertical mas eh relativo na horixontal) */
+    margin-bottom: 2%;
+    /* a mesma distancia nas laterais temos em baixo */
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.main-footer{
+    position:fixed;
+    bottom:0;
+    width:35%;
+    left: 0;
+    padding:0 54px 72px;
+    box-sizing:border-box;
+    text-align: right;
+}
+.main-footer ul{
+    list-style-type: none;
+}
+
+
+/*========================== GRID ===================== */
+
+.row{
+    overflow: auto;
+}
+.col-2{
+    width: 48.5%;
+    float: left;
+}
+.col-2:first-child{
+    margin-right: 1.5%;
+}
+.col-2:last-child{
+    margin-left: 1.5%;
+}
+.col-2-3{
+    width:66%;
+    float: left;
+    /* background:orange; */
+}
+.col-1-3{
+    /* 32*3 = 96 sobra 4 para bater os 100% */
+    width: 32%;
+    float:left;
+    /* background: yellow; */
+    /* 65 + 32 = 97 */
+    /* margin-left: 3%; */
+}
+/* existe uma forma de fazer essa seleção utilizando uma formula matematica */
+/* .col-1-3:nth-child(2),.col-1-3:nth-child(5),.col-1-3:nth-child(8){
+    margin:0 2%;
+} */
+
+/*Formatando todos os pares - se colocarmos 1n (pega todos pois 1 eh multiplo de todos)*/
+
+/* .col-1-3:nth-child(2n){ 
+    margin:0 2%;
+    border-radius:50%;
+} */
+
+/*pegando numeros*/
+.col-1-3:nth-child(3n-2){ /*1,4,7*/
+    margin-right: 2%;
+}
+.col-1-3:nth-child(3n){ /*3,6,9*/
+    margin-left: 2%;
+}
+/* seleciona o elemento col-1-3 que vem imediatamente apos o col-2-3 */
+.col-2-3 + .col-1-3,.col-1-3 + .col-2-3{
+    margin-left: 2%;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- informa ao agente de usuario a versão do html que deve ser renderizazda-->
+<html lang="pt-br"> <!-- page language-->
+    <head>
+        <title>
+            Basic structure exemple page
+        </title>
+        <meta charset="utf-8"> <!--caracteres especiais-->
+        <!--Meta tag relacionada a mecanismos de busca-->
+        <meta name="author" content="Angelina Pierre">
+        <meta name="description" content="document list">
+        <meta name="keywords" content="html5, tecnology">
+    </head> 
+
+    <body>
+        <h1>Exemplo de Formulário de Login</h1>
+ 
+        <form action="#" method="POST" class="formlogin">
+
+            <!-- personal data -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="">Email</label>
+                <!-- colocar o type "text" ou type "email" difenrença do browser(mobile) -->
+                <input type="email" required maxlength="3" placeholder="Digite um email válido">
+                <br>
+                <!-- so aceita numeros -->
+                <label for="">Numero de Filhos</label>
+                <input type="number" min="0" max="1000" required step=".5">
+                <br>
+                <label for="">Nascimento</label>
+                <input type="date" min="2018-01-30" max="2138-01-30" required>
+                <br>
+                <p>Sex:</p>
+                <label>
+                    <input type="radio" name="sex" value="F">
+                    Feminino
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="M">
+                    Masculino
+                </label>
+                <br>
+                <input type="hidden" name="expira" value="2018-12-30">
+                <br>
+                <label for="">State</label>
+                <select name="state" id="">
+                    <option value="0">Select</option>
+                    <option value="BA">Bahia</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+                <br>
+                <br>
+            </fieldset>
+            <!-- places of interests -->
+            <fieldset>
+                <legend>Places of Interests</legend>
+                <label>
+                    <input type="checkbox" name="html" value="html">HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="css" value="css">CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="js" value="js">Javascript
+                </label>
+
+            </fieldset>
+            <!-- message -->
+            <fieldset>
+                <legend>Message</legend>
+                <textarea style="resize: none" name="msg" id="" cols="50" rows="10" maxlength="10"></textarea>
+                <textarea style="resize: none" name="contract" id="" cols="50" rows="10" disabled>AQUI ENTRA O TEXTO DO CONTRATO QUE PRECISA SER ACEITO
+                </textarea>
+                <br>
+                <label for=""><input type="checkbox" checked>Li e Aceito</label>
+                <input type="range" name="" id="" min="0" max="10" step="2">
+                <input type="time" name="" id="">
+                <!-- PRECISA VER O SUPORTE PARA O browser -->
+                <input type="color" name="" id="">
+
+                <select name="" id="" multiple size="5">
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                    <option value="">option 4</option>
+                    <option value="">option 5</option>
+                </select>
+            </fieldset>
+            <br>
+            <!-- submeter formulario -->
+            <input type="submit" value="Send">
+            <!-- outra coisa qualquer para usar com o javascript -->
+            <input type="button" value="button">
+            <!-- resetar formulario -->
+            <input type="reset" value="reset">
+        </form>
+        <hr>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- informa ao agente de usuario a versão do html que deve ser renderizazda-->
+<html lang="pt-br"> <!-- page language-->
+    <head>
+        <title>
+            Basic structure exemple page
+        </title>
+        <meta charset="utf-8"> <!--caracteres especiais-->
+        <!--Meta tag relacionada a mecanismos de busca-->
+        <meta name="author" content="Angelina Pierre">
+        <meta name="description" content="document list">
+        <meta name="keywords" content="html5, tecnology">
+
+        <style>
+            .formlogin{
+                width:250px;
+                margin:50px auto 0;
+                
+            }
+            .formlogin fieldset{
+                background-color: #ccc;
+            }
+            .formlogin legend{
+                background-color: blue;
+                color:white;
+                display:inline-block;
+                padding:15px;
+            }
+            .formlogin label{
+                display:block;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            /* elementos de linha */
+            #user, #password, .subm{
+                display:block;
+                width:100%;
+                box-sizing: border-box;
+                padding:15px;
+                font-size: 18px;
+                font-family: sans-serif;
+                border:none;
+            }
+            /* ao clicar muda o foco */
+            #user:focus, #password:focus{
+                background:red;
+            }
+            .subm{
+                margin-top: 15px;
+            }
+            #user{
+                margin-bottom: 15px;;
+            }
+        </style>
+
+    </head> 
+
+    <body>
+        <h1>Exemplo de Formulário de Login</h1>
+
+        <form action="#" method="POST" class="formlogin">
+            <fieldset>
+                <legend>Login</legend>
+                <!-- usuario -->
+                <label for="user">User:</label>
+                <input type="text" id="user" name="user" autofocus>
+                <!-- senha -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <!-- submit -->
+                <input type="submit" value="Login" class="subm">
+
+            </fieldset>
+        </form>
+
+        <hr>
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- informa ao agente de usuario a versão do html que deve ser renderizazda-->
+<html lang="pt-br"> <!-- page language-->
+    <head>
+        <title>
+            Basic structure exemple page
+        </title>
+        <meta charset="utf-8"> <!--caracteres especiais-->
+        <!--Meta tag relacionada a mecanismos de busca-->
+        <meta name="author" content="Angelina Pierre">
+        <meta name="description" content="document list">
+        <meta name="keywords" content="html5, tecnology">
+    
+        <style>
+            div{
+                width:100px;
+                height:100px;
+                background-color:orange;
+
+                /* propriedade que estamos animando */
+                transition-property: width,height;
+                /* tempo de duração da animação (0.5s|.5s|500ms) */
+                transition-duration: .1s,3s;
+                /* função que determina se o tempo acelera ou desacelera
+                linear = começa na mesma velocidade que termina */
+                transition-timing-function: cubic-bezier(.67, -0.38,.5, 1.5);
+                transition-delay: 0s .8s;
+            }
+            div:hover{
+                width:400px;
+                height:400px;
+            }
+        </style>
+        
+    </head> 
+
+    <body>
+        <h1>ESTRUTURA BÁSICA</h1>
+
+        <div>text</div>
+    </body>
+</html>

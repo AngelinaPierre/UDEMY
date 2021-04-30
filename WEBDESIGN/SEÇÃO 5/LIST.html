@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- informa ao agente de usuario a versão do html que deve ser renderizazda-->
+<html lang="pt-br"> <!-- page language-->
+    <head>
+        <title>
+            Basic structure exemple page
+        </title>
+        <meta charset="utf-8"> <!--caracteres especiais-->
+        <!--Meta tag relacionada a mecanismos de busca-->
+        <meta name="author" content="Angelina Pierre">
+        <meta name="description" content="document list">
+        <meta name="keywords" content="html5, tecnology">
+
+        <style>
+            li ul{
+                height:0;
+                overflow:hidden; /*Esconde o conteudo que excede o  tamanho definido na altura*/
+                transition: height .5s;
+            }
+            /*Vamos colocar um houver no li */
+            li:hover{
+                background:#ccc;
+            }
+            /*Formataremos toda <ul> dentro da <li> que o mouse passa*/
+            li:hover ul{
+                height:50px;
+            }
+
+        </style>
+
+    </head> 
+
+    <body>
+        <h1>ESTRUTURA BÁSICA</h1>
+
+        <h2>Listas Aninhadas</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>
+                Item 2
+                <ul>
+                    <li>Item 2.1</li>
+                    <li>Item 2.2</li>
+                </ul>
+            </li>
+            <li>Item 4</li>
+        </ul>
+
+        <hr>
+        
+        <h2>Listas de Definição</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de Marcação de Hypertext</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem para criação de folhas de estilos</dd>
+        </dl>
+
+        <hr>
+
+        <dl>
+            <dt>www</dt>
+            <dt>internet</dt>
+            <dd>Rede mundial de computadores</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Linguagem script para internet</dd>
+            <dd>Script para rodar no browser</dd>
+        </dl>
+
+
+    </body>
+</html>

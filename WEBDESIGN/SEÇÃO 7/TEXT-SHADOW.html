@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- informa ao agente de usuario a versão do html que deve ser renderizazda-->
+<html lang="pt-br"> <!-- page language-->
+    <head>
+        <title>
+            Basic structure exemple page
+        </title>
+        <meta charset="utf-8"> <!--caracteres especiais-->
+        <!--Meta tag relacionada a mecanismos de busca-->
+        <meta name="author" content="Angelina Pierre">
+        <meta name="description" content="document list">
+        <meta name="keywords" content="html5, tecnology">
+
+        <style>
+            #radius{
+                background:orange;
+                width: 200px;
+                height:200px;
+                margin:50px auto;
+
+                /* horizontal / vertical | sentido horario */
+                border-radius:50px 100px / 100px 50px;
+
+                /* valores positivo direita valores negativos esquerda  */
+                /* tem o valor opcional p aumentar o sombreamento antes de se colocar a cor */
+                box-shadow: 10px -40px 10px 5px black, 10px 0 red, -10px -10px 0 blue;
+            }
+            h1{
+                font-family: sans-serif;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: -1px -1px 0 #5d5d5d,-2px -2px 0 #727272,-3px -3px 0 #868686,-4px -4px 0 #a3a3a3;
+            }
+        </style>
+    </head> 
+    <body>
+        <h1>CSS Effects</h1>
+
+        <div id="radius"></div>
+    </body>
+</html>
