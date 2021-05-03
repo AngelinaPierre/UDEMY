@@ -264,10 +264,37 @@
 # print(f'Days = {days}  | salary = {salary}')
 
 # Q41
+# print('Type the value of worked hours and the number of worked hours:')
+# v_hour = float(input())
+# w_hour = float(input())
+# salary = v_hour * w_hour
+# sal_bonus = salary + (salary * 0.1)
+# print(f'V-Hour = {v_hour} | W-Hour = {w_hour} | Salary = {salary} | Salary + bonus = {sal_bonus}')
 
+# Q42
+# print('Type the base-salary:')
+# b_sal = float(input())
+# salary = b_sal - (b_sal * 0.02)
+# print(f'Base-Salary = {b_sal} | salary = {salary}')
 
+# Q43
+# print('Type the total value:')
+# v_total = float(input())
+# v_total_desc = v_total - (v_total * .1)
+# v_total_parc = v_total/3
+# v_com_cash = v_total_desc * .05
+# v_com_parc = v_total * .05
+# print(f'TOTAL = {v_total} |\n '
+#       f'Parcelado = {v_total_parc} |\n '
+#       f'Comissão a vista = {v_com_cash} |\n '
+#       f'Comissão Parcelado = {v_com_parc}')
 
+# Q44
+# print('Type the Height of the step and the height needed to be achived:')
+# h_step = float(input())
+# h_achive = float(input())
+# number_steps = int(h_achive/h_step)
+# print(f'Number of steps needed = {number_steps}')
 
-
-
+# Q45
 
