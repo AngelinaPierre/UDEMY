@@ -258,7 +258,12 @@
 # print(f'1 - {first} | 2 - {second} | 3 - {third}')
 
 # Q40
+# print('Type number of worked days:')
+# days = float(input())
+# salary = (days * 30) - ((days*30) * 0.08)
+# print(f'Days = {days}  | salary = {salary}')
 
+# Q41
 
 
 
