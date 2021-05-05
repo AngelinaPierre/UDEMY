@@ -221,3 +221,48 @@ print(int(math.log10(number) + 1))
 #     print(f'Avarage = {med_pond}')
 
 
+# Q15
+
+# day_week = ('sunday', 'monday', 'tuesday', 'Wednesday', 'Thursday', "friday", "Saturday")
+# day = int(input('Type a number (1 to 7):'))
+#
+# if 1 < day > 7:
+#     print('Invalid Number!')
+# else:
+#     print(f'Today is {day_week[day -1]}')
+
+# second way
+# dia = int(input('Digite um número d 1 a 7: '))
+# if dia == 1:
+#     print('Today is Sunday.')
+# elif dia == 2:
+#     print('Today is Monday.')
+# elif dia == 3:
+#     print('Today is tuesday.')
+# elif dia == 4:
+#     print('Today is Wednesday')
+# elif dia == 5:
+#     print('Today is Thursday')
+# elif dia == 6:
+#     print('Today is Friday')
+# elif dia == 7:
+#     print('Today is Saturday')
+# else:
+#     print('Número inválido!')
+
+# Q16
+
+# month = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',' October','November', 'December')
+# number = int(input('Type a number:'))
+#
+# if 1 < number > 12:
+#     print('Invalid Number')
+# else:
+#     print(f'The month is {month[number-1]}')
+
+# Q17
+
+
+
+
+
