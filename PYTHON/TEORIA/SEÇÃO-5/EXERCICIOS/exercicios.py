@@ -105,7 +105,119 @@
 #     print(f'Grade = {med}')
 
 # Q9
+# print('Type your salary and the loan installment:')
+# sal = float(input())
+# loan = float(input())
+#
+# perc_sal = sal*0.2
+#
+# if loan > perc_sal:
+#     print('unsecured loan')
+# else:
+#     print('Loan Granted')
 
 
+# Q10
+# print('Type your hight and sex(M/W):')
+# height = float(input())
+# sex = input()
+#
+# if sex == 'M' or sex == 'm':
+#     ideal_weight = (72.7 * height) - 58
+#     print(f'Ideal Weight for {sex} = {ideal_weight}')
+# else:
+#     ideal_weight = (62.1 * height) - 44.7
+#     print(f'Ideal Weight for {sex} = {ideal_weight}')
+
+# Q11
+# num = int(input('Type a number: '))
+# num_str = str(num)
+#
+# if num < 10:
+#     print('Number {} Analysis:'.format(num))
+#     print(f'Unity : {num_str[0]}')
+#     add = int(num_str)
+#     print(f'Sum = {add}')
+# elif 10 <= num <= 99:
+#     print(f'Number {num} Analysis:')
+#     print(f'||Unity : {num_str[1]}||')
+#     print(f'||Ten : {num_str[0]}||')
+#     add = int(num_str[1]) + int(num_str[0])
+#     print(f'||Sum = {add}||')
+# elif 100 <= num <= 999:
+#     print(f'Number {num} Analysis:')
+#     print(f'||Unity : {num_str[2]}||')
+#     print(f'||Ten : {num_str[1]}||')
+#     print(f'||hundred : {num_str[0]}||')
+#     add = int(num_str[1]) + int(num_str[2]) + int(num_str[0])
+#     print(f'||Sum = {add}||')
+# else:
+#     print(f'Number {num} Analysis:')
+#     print(f'||Unity : {num_str[3]}||')
+#     print(f'||Ten : {num_str[2]}||')
+#     print(f'||Hundred : {num_str[1]}||')
+#     print(f'||Thousand : {num_str[0]}||')
+#     add = int(num_str[0]) + int(num_str[1]) + int(num_str[2]) + int(num_str[3])
+#     print(f'||Sum = {add}||')
+
+# print('Unity : {}'.format(num_str[3]))
+# print('Ten : {}'.format(num_str[2]))
+# print('hundred : {}'.format(num_str[1]))
+# print('thousand : {}'.format(num_str[0]))
+
+
+# Q12
+# library for utilization of math func
+# math.log(a,(base))
+#log(a)/Log(base)
+#log2(a)
+#log10(a)
+#log1p(a) _> log(1+a)
+
+# num = int(input('Type a number:'))
+# import math
+# if num < 0:
+#     print('Invalid Number!')
+# else:
+#     log_num = math.log(num)
+#     print(f'NAtural logarithm of number {num} = {log_num}')
+
+# podemos usar o log10 para computar a quanntidade de digitos em um numero.
+"""
+print(int(math.log10(number) + 1))
+"""
+
+
+# Q13
+
+# n1 = int(input('Type first grade:'))
+# n2 = int(input('Type second grade:'))
+# n3 = int(input('Type third grade:'))
+#
+# med_pond = ((n1 * 1) + (n2 * 1) + (n3 * 2))/4
+#
+# if med_pond < 60:
+#     print('Failed student!')
+# else:
+#     print(f'Avarage = {med_pond}')
+
+
+
+
+# # Q14
+
+# n1 = float(input('Type first grade:'))
+# n2 = float(input('Type second grade:'))
+# n3 = float(input('Type third grade:'))
+#
+# if 0.0 < n1 > 10.0:
+#     print('Invalid grades!')
+# elif 0.0 < n2 > 10.0:
+#     print('Invalid grades!')
+# elif 0.0 < n3 > 10.0:
+#     print('Invalid grades!')
+# else:
+#     med_pond = ((n1 * 2) + (n2 * 3) + (n3 * 5))/10
+#     print(f'Avarage = {med_pond}')
 
 
