@@ -262,6 +262,17 @@ print(int(math.log10(number) + 1))
 
 # Q17
 
+# b_maior = float(input('Digite a base maior: '))
+# b_menor = float(input('Digite a base menor: '))
+# altura = float(input('Digite a altura: '))
+#
+# if b_maior < 0 or b_menor < 0:
+#     print('Invalid Entry')
+# else:
+#     a = (b_menor + b_maior) * altura
+#     print(f'Area do trapezio = {a}')
+
+# Q18
 
 
 
