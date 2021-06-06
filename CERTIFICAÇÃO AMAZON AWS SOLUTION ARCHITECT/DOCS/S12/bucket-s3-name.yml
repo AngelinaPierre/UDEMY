@@ -1,0 +1,9 @@
+---
+Resources:
+  BucketsS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: "ap-s3-scrip"
+
+      
