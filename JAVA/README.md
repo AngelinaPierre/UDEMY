@@ -134,11 +134,14 @@ Vamos nesta seção sobre o que é o JAVA, variaveis, compiladores, função mai
 
 ## [Aula 10] - A LINGUAGEM JAVA, JRE, JDK E ECOSSISTEMA JAVA
 
+
+
 &nbsp;
 
 
 ~~~text
                             [JAVA]
+
         [JVM]       [JDK]       [JRE]       [LINGUAGEM JAVA]
 ~~~
 
